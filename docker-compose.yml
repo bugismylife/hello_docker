@@ -1,0 +1,19 @@
+version: '3.7'
+
+
+services: 
+ web:
+  build: .
+  command: python /code/hello/manage.py runserver 0.0.0.0:8000
+  volumes:
+   - .:/code/hello
+  ports:
+   - 8000:8000
+
+
+# services mean containers =>  we want them to run on our Docker host
+# we have just one which is called web
+# volumes help us that we don't have to rebuild the image each time we change a single file
+# last we specify the ports which is default ports for Django
+
+# for to run our container, we need to use the command => docker-compose up

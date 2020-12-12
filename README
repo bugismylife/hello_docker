@@ -1,0 +1,9 @@
+# it is the first time, we've created a project with Docker
+# first of all we created a Dockerfile and build the initial image
+# after that we created a docker-compose.yml and run the container with docker-compose up
+# if you want to stop it, docker-compose down
+# docker has images, containers and of course docker host
+# images => they are the snapshots in time of what a project contains
+# container => it is a running instance of an image
+# docker host => it is possible to have multiple containers in a single Docker host. When we refer to code or process running with Docker, 
+it means they are running on the docker host.
